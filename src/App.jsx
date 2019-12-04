@@ -194,6 +194,15 @@ export default class App extends Component {
     )
   };
 
+  getPieChartButton = () => {
+    if (this.state.point == null) {
+      return <button onClick={this.toPieChart()} disabled className="btn btn-success">Let's view your portfolio</button>
+    } else {
+      return <button onClick={this.toPieChart()} className="btn btn-success">Let's view your portfolio</button>
+    }
+
+  };
+
   pieChart() {
 
     let colors = ['#E38627', '#C13C37', '#6A2135'];
@@ -263,13 +272,8 @@ export default class App extends Component {
     )
   };
 
-
-
-
-
   startPage() {
     return (
-
         <div className="App bg-dark">
           <header className="App-header">
             <div>
@@ -449,7 +453,7 @@ export default class App extends Component {
                       <button onClick={this.downloadObjectAsJson()} className="btn btn-outline-dark">Export Whole Analysis as JSON</button>
                     </div>
                     <div className="download-button mt-4">
-                      <button onClick={this.toPieChart()} className="btn btn-success">pieChart</button>
+                      {this.getPieChartButton()}
                     </div>
                   </div>
                   </div>
