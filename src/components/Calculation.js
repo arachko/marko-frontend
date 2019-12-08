@@ -11,10 +11,12 @@ import {
 } from "../utils/DataService";
 
 class CalculationPage extends Component{
+    state = {
+        riskFree: 0.05
+    };
+
     onClickLineChart = () => (event, point) => {
         const { selectPoint } = this.props;
-        console.log(point);
-        console.log(this);
         selectPoint(point);
     };
 
@@ -141,8 +143,19 @@ class CalculationPage extends Component{
         }
     };
 
+    updateCml = () => (e) => {
+        if (e.target.value > 0.3 || e.target.value < 0) {
+            window.alert("Please enter a value between 0 and 0.3");
+        }
+        else {
+            this.setState({riskFree: Number(e.target.value)})
+        }
+    };
+
+
     render() {
         const {state, toPieChartButton} = this.props;
+
         if (state.loading) {
             return <h2>{this.getLoadingMessage()}</h2>
         }
@@ -160,8 +173,8 @@ class CalculationPage extends Component{
             name: tangentPoint.name
         };
 
-        let portfolios = state.data.EfficientPortfolios.Points
-        console.log(portfolios);
+        let portfolios = state.data.EfficientPortfolios.Points;
+
         const userLineName = "user";
 
         for (let i = 0; i < portfolios.length; i++) {
@@ -183,7 +196,7 @@ class CalculationPage extends Component{
 
         const userDefinedCML = {
             volatility: 0,
-            return: state.riskFree,
+            return: this.state.riskFree,
             name: userLineName
         };
 
@@ -292,7 +305,7 @@ class CalculationPage extends Component{
                             <div className="button-container card-body">
                                 <div className="cml form-group my-2">
                                     <label htmlFor="CML">CML:</label>
-                                    <input id="CML" className="form-control" type="number" defaultValue={state.riskFree} min="0" max="0.3" step="0.001" onChange={this.updateCml} />
+                                    <input id="CML" className="form-control" type="number" defaultValue={state.riskFree} min="0" max="0.3" step="0.001" onChange={this.updateCml()} />
                                 </div>
                                 <div className="single-dl-button mt-4">
                                     <button onClick={this.downloadSinglePoint()} className="btn btn-outline-dark">Export Selected Point Only</button>
