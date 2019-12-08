@@ -58,14 +58,6 @@ export default class App extends Component {
     this.setState({point: point})
   };
 
-  getPieChartButton = () => {
-    if (this.state.point == null) {
-      return <button onClick={this.changePage('portfolio')} disabled className="btn btn-success">Let's view your portfolio</button>
-    } else {
-      return <button onClick={this.changePage('portfolio')} className="btn btn-success">Let's view your portfolio</button>
-    }
-  };
-
   setJson = (content) => {
     this.setState({jsonFile: content});
   };
@@ -76,7 +68,7 @@ export default class App extends Component {
     } else if (this.state.page === 'calculation') {
       return <CalculationPage
           state={this.state}
-          toPieChartButton={this.getPieChartButton}
+          changePage={this.changePage}
           selectPoint={this.selectPoint}
           setJson={this.setJson}
       />

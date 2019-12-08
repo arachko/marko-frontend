@@ -12,12 +12,15 @@ import {
 
 class CalculationPage extends Component{
     state = {
-        riskFree: 0.05
+        riskFree: 0.05,
+        point: null
     };
 
     onClickLineChart = () => (event, point) => {
-        const { selectPoint } = this.props;
-        selectPoint(point);
+        this.props.selectPoint(point);
+        this.setState({
+            point: point
+        })
     };
 
     onHoverLineChart = obj => {
@@ -30,6 +33,17 @@ class CalculationPage extends Component{
                 : '')
         )
     };
+
+    getLoadingMessage() {
+        setTimeout(() => this.updateMinutes(), 60000);
+        if (this.state.minutes === 0) {
+            return "Processing request..."
+        } else if (this.state.minutes === 1) {
+            return "So far it has taken 1 minute, still processing..."
+        } else {
+            return "So far it has taken " + this.state.minutes + " minutes, still processing..."
+        }
+    }
 
     uploadFormSubmit = () => (e) => {
         e.preventDefault();
@@ -152,10 +166,21 @@ class CalculationPage extends Component{
         }
     };
 
+    componentDidMount() {
+        this.setState({data: this.props.state.data, point: this.props.state.point})
+    }
+
+    getPieChartButton = () => {
+        const { changePage } = this.props;
+        if (this.state.point == null) {
+            return <button onClick={changePage('portfolio')} disabled className="btn btn-success">Let's view your portfolio</button>
+        } else {
+            return <button onClick={changePage('portfolio')} className="btn btn-success">Let's view your portfolio</button>
+        }
+    };
 
     render() {
-        const {state, toPieChartButton} = this.props;
-
+        const { state } = this.props;
         if (state.loading) {
             return <h2>{this.getLoadingMessage()}</h2>
         }
@@ -164,8 +189,21 @@ class CalculationPage extends Component{
             return <h2>Received an error from server...</h2>;
         }
 
-        const tangentPoint = state.data.CML.OptimalPorfolio.OP.Portfolio;
-        const riskfreeValue = state.data.CML.OptimalPorfolio.riskfree_ret;
+        let portfolios;
+        let tangentPoint;
+        let riskfreeValue;
+
+
+        if (this.state.data === undefined) {
+            portfolios = state.data.EfficientPortfolios.Points;
+            tangentPoint = state.data.CML.OptimalPorfolio.OP.Portfolio;
+            riskfreeValue = state.data.CML.OptimalPorfolio.riskfree_ret;
+        } else {
+            portfolios = this.state.data.EfficientPortfolios.Points;
+            tangentPoint = this.state.data.CML.OptimalPorfolio.OP.Portfolio;
+            riskfreeValue = this.state.data.CML.OptimalPorfolio.riskfree_ret;
+        }
+
 
         const riskfreePoint = {
             volatility: 0,
@@ -173,7 +211,6 @@ class CalculationPage extends Component{
             name: tangentPoint.name
         };
 
-        let portfolios = state.data.EfficientPortfolios.Points;
 
         const userLineName = "user";
 
@@ -202,18 +239,17 @@ class CalculationPage extends Component{
 
         portfolios.push(riskfreePoint, tangentPoint, tangentLineContinued, userDefinedCML);
 
-        if (state.point != null) {
-
+        if (this.state.point != null) {
             const userTangentPoint = {
-                volatility: state.point.x,
-                return: state.point.y,
-                sharpe: state.point.sharpe,
-                weights: state.point.weights,
+                volatility: this.state.point.x,
+                return: this.state.point.y,
+                sharpe: this.state.point.sharpe,
+                weights: this.state.point.weights,
                 name: userLineName
             };
 
-            const userSlope = (state.point.y - state.riskFree) / state.point.x;
-            const userContReturn = userSlope * tangentLineContVolatility + state.riskFree;
+            const userSlope = (this.state.point.y - this.state.riskFree) / this.state.point.x;
+            const userContReturn = userSlope * tangentLineContVolatility + this.state.riskFree;
 
             const userLineContinued = {
                 volatility: tangentLineContVolatility,
@@ -223,7 +259,6 @@ class CalculationPage extends Component{
 
             portfolios.push(userTangentPoint, userLineContinued)
         }
-
         let dataParsed = parseGroupingBy(portfolios, "volatility", "return", "name");
         return (
             <div className="bg-dark">
@@ -247,13 +282,10 @@ class CalculationPage extends Component{
                                                 interpolate="cardinal"
                                                 pointRadius={2}
                                                 xMin="0"
-                                                //xMax="5"
                                                 yMin={0}
                                                 xDisplay={d3.format(".2f")}
-                                                //yMax={1}
                                                 onPointHover={this.onHoverLineChart}
                                                 onPointClick={this.onClickLineChart()}
-                                                //showLegends
                                                 legendPosition="bottom-right"
                                                 data={dataParsed}
                                             />
@@ -295,9 +327,7 @@ class CalculationPage extends Component{
 
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                     <div className="col-12 col-md-4">
                         <div className="card">
@@ -314,7 +344,7 @@ class CalculationPage extends Component{
                                     <button onClick={this.downloadObjectAsJson()} className="btn btn-outline-dark">Export Whole Analysis as JSON</button>
                                 </div>
                                 <div className="download-button mt-4">
-                                    {toPieChartButton()}
+                                    {this.getPieChartButton()}
                                 </div>
                             </div>
                         </div>
