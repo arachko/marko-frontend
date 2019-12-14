@@ -5,32 +5,66 @@ class PieChartPage extends Component {
 
     render() {
         const { point, changePage } = this.props;
+        console.log(point)
         let colorsDiversity = ['#517f11', '#215111', '#1a7111', '#6f7111'];
         let colors = [];
         for(let i=0; i<10; i++) {colors.push(...colorsDiversity)}
         let weights = [];
         for (let i = 0; i < point.weights.length; i++) {
             if (point.weights[i].weight > 0) {
-                weights.push(point.weights[i])
+                if (point.weights[i].volume !== undefined) {
+                    weights.push(point.weights[i])
+                }
+
             }
         }
 
         const data = weights.map((weight) => {
-            return {title: weight.symbol, value: weight.weight, color: colors[weights.indexOf(weight)]}
+            return {title: weight.symbol, value: weight.weight, price: weight.price, volume: weight.volume,
+                total: weight.total, color: colors[weights.indexOf(weight)]}
         });
         console.log(data);
 
         const getData = (data) => {
-            return data.map((weight) => {
-                return <div key={weight.title}>
+            let elements = data.map((weight) => {
+                return <div className="mb-3" key={weight.title}>
                     <div>
                         Title: {weight.title}
                     </div>
-                    <div className="mb-3">
+                    <div className="mt-1">
                         Percentage: {(weight.value * 100).toFixed(2)}%
                     </div>
+                    <div>
+                        Price: {(weight.price).toFixed(2)}
+                    </div>
+                    <div>
+                        Volume: {(weight.volume)}
+                    </div>
+                    <div>
+                        Total: {(weight.total).toFixed(2)}
+                    </div>
                 </div>
-            })
+            });
+            let rows = [];
+            for (let i = 0; i < elements.length; i = i + 2) {
+                rows.push(
+                    (
+                        <div className='row'>
+                            <div className='col'>
+                                { elements[i] }
+                            </div>
+                            <div className='col'>
+                                { elements[i+1] }
+                            </div>
+                        </div>
+                    )
+                )
+            }
+            return (
+                <div className='container-fluid'>
+                    { rows }
+                </div>
+            )
         };
 
         return (

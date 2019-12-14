@@ -6,17 +6,20 @@ import {
     allowedFileTypes, allowedJsonTypes, doesJsonHaveExpectedContent,
     fileIsIncorrectFileType, fileIsIncorrectJsonType,
     fileUpload,
-    logErrorJson,
     showInvalidFileTypeMessage
 } from "../utils/DataService";
 
 class CalculationPage extends Component{
     state = {
         riskFree: 0.05,
-        point: null
+        point: null,
+        fileType: 'uploadasync',
+        minutes: 0,
+        loading: false
     };
 
     onClickLineChart = () => (event, point) => {
+        console.log(point)
         this.props.selectPoint(point);
         this.setState({
             point: point
@@ -34,6 +37,12 @@ class CalculationPage extends Component{
         )
     };
 
+    updateMinutes() {
+        this.setState({
+            minutes: ++this.state.minutes
+        })
+    }
+
     getLoadingMessage() {
         setTimeout(() => this.updateMinutes(), 60000);
         if (this.state.minutes === 0) {
@@ -45,7 +54,9 @@ class CalculationPage extends Component{
         }
     }
 
+
     uploadFormSubmit = () => (e) => {
+        const { setData } = this.props;
         e.preventDefault();
         if (this.state.file == null || fileIsIncorrectFileType(this.state.file)) {
             showInvalidFileTypeMessage(allowedFileTypes)
@@ -58,27 +69,17 @@ class CalculationPage extends Component{
                 point: null,
                 minutes: 0
             });
-            fileUpload(this.state.file, this.state.riskFree, this.state.fileType).then((json) => {
-                if (this.state.fileType === "uploadasync") {
-                    const uuid = json.response.uid;
-                    this.pollServerForResult(uuid)
-                }
-                else {
-                    logErrorJson(json);
+
+            fileUpload(this.state.file)
+                .then(json => {
+                    console.log(json);
+                    setData(json)
                     this.setState({
                         data: json,
                         loading: false,
-                        riskFree: json.CML.OptimalPorfolio.riskfree_ret
+                        riskFree: json.CML.OptimalPortfolio.riskfree_ret
                     })
-                }
-            })
-                .catch(error => {
-                    console.log(error);
-                    this.setState({
-                        loading: false,
-                        error: true
-                    })
-                });
+                })
         }
     };
 
@@ -92,7 +93,6 @@ class CalculationPage extends Component{
     };
 
     updateFileType = () => (e) => {
-        console.log(e.target.value);
         this.setState({filetype:e.target.value})
     };
 
@@ -150,7 +150,7 @@ class CalculationPage extends Component{
                 point: null,
                 data: jsonfile,
                 loading: false,
-                riskFree: jsonfile.CML.OptimalPorfolio.riskfree_ret
+                riskFree: jsonfile.CML.OptimalPortfolio.riskfree_ret
             })
         } else {
             window.alert("Unexpected json format");
@@ -175,33 +175,30 @@ class CalculationPage extends Component{
         if (this.state.point == null) {
             return <button onClick={changePage('portfolio')} disabled className="btn btn-success">Let's view your portfolio</button>
         } else {
-            return <button onClick={changePage('portfolio')} className="btn btn-success">Let's view your portfolio</button>
+            return <button onClick={changePage('portfolio')} className="btn btn-success">Let's see your portfolio</button>
         }
     };
 
     render() {
         const { state } = this.props;
-        if (state.loading) {
+        if (this.state.loading) {
             return <h2>{this.getLoadingMessage()}</h2>
         }
 
-        if (state.error) {
+        if (this.state.error) {
             return <h2>Received an error from server...</h2>;
         }
-
         let portfolios;
         let tangentPoint;
         let riskfreeValue;
-
-
         if (this.state.data === undefined) {
             portfolios = state.data.EfficientPortfolios.Points;
-            tangentPoint = state.data.CML.OptimalPorfolio.OP.Portfolio;
-            riskfreeValue = state.data.CML.OptimalPorfolio.riskfree_ret;
+            tangentPoint = state.data.CML.OptimalPortfolio.OP.Portfolio;
+            riskfreeValue = state.data.CML.OptimalPortfolio.riskfree_ret;
         } else {
             portfolios = this.state.data.EfficientPortfolios.Points;
-            tangentPoint = this.state.data.CML.OptimalPorfolio.OP.Portfolio;
-            riskfreeValue = this.state.data.CML.OptimalPorfolio.riskfree_ret;
+            tangentPoint = this.state.data.CML.OptimalPortfolio.OP.Portfolio;
+            riskfreeValue = this.state.data.CML.OptimalPortfolio.riskfree_ret;
         }
 
 
@@ -213,14 +210,11 @@ class CalculationPage extends Component{
 
 
         const userLineName = "user";
-
-        for (let i = 0; i < portfolios.length; i++) {
-            if (portfolios[i].name === tangentPoint.name) {
-                portfolios.splice(i, portfolios.length - i);
-                break;
+        for (let i = portfolios.length-1; i >= 0; i--) {
+            if (portfolios[i].name !== undefined) {
+                portfolios.splice(i, 1);
             }
         }
-
         const tangentLineContVolatility = portfolios[portfolios.length - 1].volatility;
         const slope = (tangentPoint.return - riskfreeValue) / tangentPoint.volatility;
         const tangentLineContReturn = slope * tangentLineContVolatility + riskfreeValue;
@@ -260,6 +254,18 @@ class CalculationPage extends Component{
             portfolios.push(userTangentPoint, userLineContinued)
         }
         let dataParsed = parseGroupingBy(portfolios, "volatility", "return", "name");
+        let xMin = dataParsed[0].points[0].x;
+        let yMin = dataParsed[0].points[0].y;
+        for (let i = 0; i < dataParsed[0].points.length; i++) {
+            if (dataParsed[0].points[i].x < xMin) {
+                xMin = dataParsed[0].points[i].x
+            }
+            if (dataParsed[0].points[i].y < yMin) {
+                yMin = dataParsed[0].points[i].y
+            }
+
+        }
+
         return (
             <div className="bg-dark">
             <div className="container py-5 bg-white">
@@ -281,8 +287,8 @@ class CalculationPage extends Component{
                                                 yLabel="Expected Return"
                                                 interpolate="cardinal"
                                                 pointRadius={2}
-                                                xMin="0"
-                                                yMin={0}
+                                                xMin={xMin*0.95}
+                                                yMin={yMin*0.95}
                                                 xDisplay={d3.format(".2f")}
                                                 onPointHover={this.onHoverLineChart}
                                                 onPointClick={this.onClickLineChart()}
@@ -300,7 +306,7 @@ class CalculationPage extends Component{
                                                 <input type="file" onChange={this.fileChange()} className="my-3"/>
                                                 <label className="file-type">
                                                     Upload Type:
-                                                    <select value={state.fileType} onChange={this.updateFileType()} className="form-control">
+                                                    <select value={this.state.fileType} onChange={this.updateFileType()} className="form-control">
                                                         <option value="uploadasync">uploadasync</option>
                                                         <option value="upload1">upload1</option>
                                                         <option value="upload">upload</option>

@@ -1,0 +1,1368 @@
+{
+  "CML": {
+    "OptimalPortfolio": {
+      "OP": {
+        "Portfolio": {
+          "return": 0.3544861484387415,
+          "sharpe": 2.090814228258223,
+          "volatility": 0.14563041724295,
+          "weights": [
+            {
+              "price": 79.22,
+              "symbol": "MRK",
+              "total": 38342.48,
+              "volume": 484,
+              "weight": 0.38344
+            },
+            {
+              "price": 182.49,
+              "symbol": "NEE",
+              "total": 18978.96,
+              "volume": 104,
+              "weight": 0.19079
+            },
+            {
+              "price": 1772.36,
+              "symbol": "AMZN",
+              "total": 19495.96,
+              "volume": 11,
+              "weight": 0.18651
+            },
+            {
+              "price": 118.52,
+              "symbol": "LLY",
+              "total": 12918.68,
+              "volume": 109,
+              "weight": 0.12994
+            },
+            {
+              "price": 69.11,
+              "symbol": "COP",
+              "total": 6219.9,
+              "volume": 90,
+              "weight": 0.06296
+            },
+            {
+              "price": 255.26,
+              "symbol": "ADBE",
+              "total": 2042.08,
+              "volume": 8,
+              "weight": 0.02275
+            },
+            {
+              "price": 290.3,
+              "symbol": "NFLX",
+              "total": 1161.2,
+              "volume": 4,
+              "weight": 0.0135
+            },
+            {
+              "price": 209.86,
+              "symbol": "MA",
+              "total": 839.44,
+              "volume": 4,
+              "weight": 0.01011
+            }
+          ],
+          "name": "testtest"
+        }
+      },
+      "opt_ret": 0.354,
+      "opt_vol": 0.146,
+      "riskfree_ret": 0.05
+    }
+  },
+  "EfficientPortfolios": {
+    "Points": [
+      {
+        "return": 0.3417363850907432,
+        "sharpe": 2.371419118238218,
+        "volatility": 0.13988939472546627,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 35886.66,
+            "volume": 453,
+            "weight": 0.35833
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 23906.19,
+            "volume": 131,
+            "weight": 0.23834
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 17723.6,
+            "volume": 10,
+            "weight": 0.16906
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 12089.04,
+            "volume": 102,
+            "weight": 0.12069
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 6911,
+            "volume": 100,
+            "weight": 0.06877
+          },
+          {
+            "price": 209.86,
+            "symbol": "MA",
+            "total": 1678.88,
+            "volume": 8,
+            "weight": 0.01682
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 1786.82,
+            "volume": 7,
+            "weight": 0.01641
+          },
+          {
+            "symbol": "NFLX",
+            "weight": 0.00932
+          },
+          {
+            "symbol": "ABT",
+            "weight": 0.00225
+          }
+        ]
+      },
+      {
+        "return": 0.34465051573513705,
+        "sharpe": 2.3002561513509425,
+        "volatility": 0.14113667973215482,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 36361.98,
+            "volume": 459,
+            "weight": 0.36425
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 22811.25,
+            "volume": 125,
+            "weight": 0.22793
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 17723.6,
+            "volume": 10,
+            "weight": 0.17309
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 12326.08,
+            "volume": 104,
+            "weight": 0.1232
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 6634.56,
+            "volume": 96,
+            "weight": 0.06763
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 1786.82,
+            "volume": 7,
+            "weight": 0.01783
+          },
+          {
+            "price": 209.86,
+            "symbol": "MA",
+            "total": 1469.02,
+            "volume": 7,
+            "weight": 0.01574
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 870.9,
+            "volume": 3,
+            "weight": 0.01033
+          }
+        ]
+      },
+      {
+        "return": 0.3476441157663082,
+        "sharpe": 2.2297284574011393,
+        "volatility": 0.14245865442132735,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 36995.74,
+            "volume": 467,
+            "weight": 0.36999
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 21716.31,
+            "volume": 119,
+            "weight": 0.21657
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 17723.6,
+            "volume": 10,
+            "weight": 0.17706
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 12563.12,
+            "volume": 106,
+            "weight": 0.12539
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 6565.45,
+            "volume": 95,
+            "weight": 0.06623
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 1786.82,
+            "volume": 7,
+            "weight": 0.01924
+          },
+          {
+            "price": 209.86,
+            "symbol": "MA",
+            "total": 1469.02,
+            "volume": 7,
+            "weight": 0.01419
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 1161.2,
+            "volume": 4,
+            "weight": 0.01133
+          }
+        ]
+      },
+      {
+        "return": 0.35092434467904565,
+        "sharpe": 2.159891525044244,
+        "volatility": 0.14395368520772198,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 37629.5,
+            "volume": 475,
+            "weight": 0.37619
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 20438.88,
+            "volume": 112,
+            "weight": 0.2043
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 17723.6,
+            "volume": 10,
+            "weight": 0.1816
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 12800.16,
+            "volume": 108,
+            "weight": 0.12771
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 6634.56,
+            "volume": 96,
+            "weight": 0.06461
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 2042.08,
+            "volume": 8,
+            "weight": 0.02106
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 1451.5,
+            "volume": 5,
+            "weight": 0.01241
+          },
+          {
+            "price": 209.86,
+            "symbol": "MA",
+            "total": 1259.16,
+            "volume": 6,
+            "weight": 0.01211
+          }
+        ]
+      },
+      {
+        "return": 0.3544861484387415,
+        "sharpe": 2.090814228258223,
+        "volatility": 0.14563041724295,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 38342.48,
+            "volume": 484,
+            "weight": 0.38344
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 18978.96,
+            "volume": 104,
+            "weight": 0.19079
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 19495.96,
+            "volume": 11,
+            "weight": 0.18651
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 12918.68,
+            "volume": 109,
+            "weight": 0.12994
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 6219.9,
+            "volume": 90,
+            "weight": 0.06296
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 2042.08,
+            "volume": 8,
+            "weight": 0.02275
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 1161.2,
+            "volume": 4,
+            "weight": 0.0135
+          },
+          {
+            "price": 209.86,
+            "symbol": "MA",
+            "total": 839.44,
+            "volume": 4,
+            "weight": 0.01011
+          }
+        ]
+      },
+      {
+        "return": 0.358360820205091,
+        "sharpe": 2.0225749537033058,
+        "volatility": 0.14751533418269452,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 39055.46,
+            "volume": 493,
+            "weight": 0.39055
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 19495.96,
+            "volume": 11,
+            "weight": 0.19173
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 17884.02,
+            "volume": 98,
+            "weight": 0.17611
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 13392.76,
+            "volume": 113,
+            "weight": 0.13321
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 6150.79,
+            "volume": 89,
+            "weight": 0.0611
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 2552.6,
+            "volume": 10,
+            "weight": 0.02442
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 1451.5,
+            "volume": 5,
+            "weight": 0.0149
+          },
+          {
+            "symbol": "MA",
+            "weight": 0.00798
+          }
+        ]
+      },
+      {
+        "return": 0.36259618979949565,
+        "sharpe": 1.9552609156294218,
+        "volatility": 0.14964559842659436,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 39926.88,
+            "volume": 504,
+            "weight": 0.39891
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 19495.96,
+            "volume": 11,
+            "weight": 0.19714
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 16059.12,
+            "volume": 88,
+            "weight": 0.15999
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 13629.8,
+            "volume": 115,
+            "weight": 0.1361
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 5943.46,
+            "volume": 86,
+            "weight": 0.05907
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 2807.86,
+            "volume": 11,
+            "weight": 0.02655
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 1741.8,
+            "volume": 6,
+            "weight": 0.01629
+          },
+          {
+            "symbol": "MA",
+            "weight": 0.00595
+          }
+        ]
+      },
+      {
+        "return": 0.3672311271948414,
+        "sharpe": 1.8889709709423423,
+        "volatility": 0.1520569302616396,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 40719.08,
+            "volume": 514,
+            "weight": 0.40798
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 21268.32,
+            "volume": 12,
+            "weight": 0.20337
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 14234.22,
+            "volume": 78,
+            "weight": 0.14251
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 13629.8,
+            "volume": 115,
+            "weight": 0.13935
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 5597.91,
+            "volume": 81,
+            "weight": 0.05693
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 2807.86,
+            "volume": 11,
+            "weight": 0.02882
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 1741.8,
+            "volume": 6,
+            "weight": 0.01798
+          },
+          {
+            "symbol": "MA",
+            "weight": 0.00307
+          }
+        ]
+      },
+      {
+        "return": 0.3725372116510609,
+        "sharpe": 1.823817641599806,
+        "volatility": 0.1549152750837669,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 41828.16,
+            "volume": 528,
+            "weight": 0.41824
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 21268.32,
+            "volume": 12,
+            "weight": 0.21069
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 14222.4,
+            "volume": 120,
+            "weight": 0.14303
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 12226.83,
+            "volume": 67,
+            "weight": 0.12247
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 5321.47,
+            "volume": 77,
+            "weight": 0.05437
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 3063.12,
+            "volume": 12,
+            "weight": 0.03109
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 2032.1,
+            "volume": 7,
+            "weight": 0.01973
+          },
+          {
+            "symbol": "MA",
+            "weight": 0.00038
+          }
+        ]
+      },
+      {
+        "return": 0.37844153793275814,
+        "sharpe": 1.7599194335635282,
+        "volatility": 0.1582126616835879,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 42937.24,
+            "volume": 542,
+            "weight": 0.42878
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 21268.32,
+            "volume": 12,
+            "weight": 0.21785
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 14815,
+            "volume": 125,
+            "weight": 0.1476
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 10036.95,
+            "volume": 55,
+            "weight": 0.09982
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 5183.25,
+            "volume": 75,
+            "weight": 0.05116
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 3318.38,
+            "volume": 13,
+            "weight": 0.03331
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 2322.4,
+            "volume": 8,
+            "weight": 0.02148
+          }
+        ]
+      },
+      {
+        "return": 0.3848335609380113,
+        "sharpe": 1.6974098902432204,
+        "volatility": 0.1619134909710174,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 43887.88,
+            "volume": 554,
+            "weight": 0.44114
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 23040.68,
+            "volume": 13,
+            "weight": 0.22536
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 15170.56,
+            "volume": 128,
+            "weight": 0.15169
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 7482.09,
+            "volume": 41,
+            "weight": 0.07521
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 4768.59,
+            "volume": 69,
+            "weight": 0.04782
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 3318.38,
+            "volume": 13,
+            "weight": 0.03523
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 2322.4,
+            "volume": 8,
+            "weight": 0.02355
+          }
+        ]
+      },
+      {
+        "return": 0.3921278464989748,
+        "sharpe": 1.6364474712325443,
+        "volatility": 0.16629183110534723,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 45551.5,
+            "volume": 575,
+            "weight": 0.45424
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 23040.68,
+            "volume": 13,
+            "weight": 0.23412
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 15763.16,
+            "volume": 133,
+            "weight": 0.15774
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 4744.74,
+            "volume": 26,
+            "weight": 0.04692
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 4423.04,
+            "volume": 64,
+            "weight": 0.04393
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 3828.9,
+            "volume": 15,
+            "weight": 0.03731
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 2612.7,
+            "volume": 9,
+            "weight": 0.02574
+          }
+        ]
+      },
+      {
+        "return": 0.40056860058376037,
+        "sharpe": 1.577212172747746,
+        "volatility": 0.17154863832453712,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 47056.68,
+            "volume": 594,
+            "weight": 0.47063
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 24813.04,
+            "volume": 14,
+            "weight": 0.24408
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 16237.24,
+            "volume": 137,
+            "weight": 0.16304
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 3828.9,
+            "volume": 15,
+            "weight": 0.03989
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 3939.27,
+            "volume": 57,
+            "weight": 0.03953
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 2612.7,
+            "volume": 9,
+            "weight": 0.02842
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 1459.92,
+            "volume": 8,
+            "weight": 0.01441
+          }
+        ]
+      },
+      {
+        "return": 0.40519330098362466,
+        "sharpe": 1.5196067526998,
+        "volatility": 0.1745144265201972,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 47769.66,
+            "volume": 603,
+            "weight": 0.47773
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 24813.04,
+            "volume": 14,
+            "weight": 0.251
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 16355.76,
+            "volume": 138,
+            "weight": 0.16339
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 4339.42,
+            "volume": 17,
+            "weight": 0.04149
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 3524.61,
+            "volume": 51,
+            "weight": 0.03472
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 3193.3,
+            "volume": 11,
+            "weight": 0.03168
+          }
+        ]
+      },
+      {
+        "return": 0.40684557492022005,
+        "sharpe": 1.462483112385511,
+        "volatility": 0.17562293386162225,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 47848.88,
+            "volume": 604,
+            "weight": 0.47797
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 24813.04,
+            "volume": 14,
+            "weight": 0.25583
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 16237.24,
+            "volume": 137,
+            "weight": 0.1589
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 4339.42,
+            "volume": 17,
+            "weight": 0.04238
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 3773.9,
+            "volume": 13,
+            "weight": 0.03538
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 2971.73,
+            "volume": 43,
+            "weight": 0.02955
+          }
+        ]
+      },
+      {
+        "return": 0.4086575466807455,
+        "sharpe": 1.4057392650716014,
+        "volatility": 0.17688738790979144,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 47769.66,
+            "volume": 603,
+            "weight": 0.47832
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 26585.4,
+            "volume": 15,
+            "weight": 0.26114
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 15170.56,
+            "volume": 128,
+            "weight": 0.15383
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 4339.42,
+            "volume": 17,
+            "weight": 0.04329
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 3773.9,
+            "volume": 13,
+            "weight": 0.03947
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 2349.74,
+            "volume": 34,
+            "weight": 0.02394
+          }
+        ]
+      },
+      {
+        "return": 0.41057825469165965,
+        "sharpe": 1.3494236535192508,
+        "volatility": 0.17828222742667937,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 48086.54,
+            "volume": 607,
+            "weight": 0.47954
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 26585.4,
+            "volume": 15,
+            "weight": 0.26645
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 14815,
+            "volume": 125,
+            "weight": 0.14831
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 4339.42,
+            "volume": 17,
+            "weight": 0.04408
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 4354.5,
+            "volume": 15,
+            "weight": 0.04407
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 1796.86,
+            "volume": 26,
+            "weight": 0.01754
+          }
+        ]
+      },
+      {
+        "return": 0.41278960738683906,
+        "sharpe": 1.2935918011930145,
+        "volatility": 0.17995600093642283,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 48007.32,
+            "volume": 606,
+            "weight": 0.48007
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 26585.4,
+            "volume": 15,
+            "weight": 0.27291
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 14222.4,
+            "volume": 120,
+            "weight": 0.14211
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 4935.1,
+            "volume": 17,
+            "weight": 0.04904
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 5105.2,
+            "volume": 20,
+            "weight": 0.04525
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 1105.76,
+            "volume": 16,
+            "weight": 0.01062
+          }
+        ]
+      },
+      {
+        "return": 0.4152108413961366,
+        "sharpe": 1.238309028077601,
+        "volatility": 0.18186965958389453,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 48007.32,
+            "volume": 606,
+            "weight": 0.48103
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 28357.76,
+            "volume": 16,
+            "weight": 0.27969
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 13511.28,
+            "volume": 114,
+            "weight": 0.13529
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 5515.7,
+            "volume": 19,
+            "weight": 0.05464
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 4594.68,
+            "volume": 18,
+            "weight": 0.04655
+          },
+          {
+            "symbol": "COP",
+            "weight": 0.00279
+          }
+        ]
+      },
+      {
+        "return": 0.4174540950244872,
+        "sharpe": 1.1836162359687157,
+        "volatility": 0.18372010151289841,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 47928.1,
+            "volume": 605,
+            "weight": 0.47927
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 28357.76,
+            "volume": 16,
+            "weight": 0.28628
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 12681.64,
+            "volume": 107,
+            "weight": 0.12698
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 6096.3,
+            "volume": 21,
+            "weight": 0.06045
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 4849.94,
+            "volume": 19,
+            "weight": 0.04703
+          }
+        ]
+      },
+      {
+        "return": 0.4197127115863953,
+        "sharpe": 1.1294686654690185,
+        "volatility": 0.1856737756414967,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 47611.22,
+            "volume": 601,
+            "weight": 0.47639
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 30130.12,
+            "volume": 17,
+            "weight": 0.29268
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 11496.44,
+            "volume": 97,
+            "weight": 0.11692
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 6676.9,
+            "volume": 23,
+            "weight": 0.06697
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 4084.16,
+            "volume": 16,
+            "weight": 0.04704
+          }
+        ]
+      },
+      {
+        "volatility": 0,
+        "return": 0.05,
+        "name": "testtest"
+      },
+      {
+        "return": 0.3544861484387415,
+        "sharpe": 2.090814228258223,
+        "volatility": 0.14563041724295,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 38342.48,
+            "volume": 484,
+            "weight": 0.38344
+          },
+          {
+            "price": 182.49,
+            "symbol": "NEE",
+            "total": 18978.96,
+            "volume": 104,
+            "weight": 0.19079
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 19495.96,
+            "volume": 11,
+            "weight": 0.18651
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 12918.68,
+            "volume": 109,
+            "weight": 0.12994
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 6219.9,
+            "volume": 90,
+            "weight": 0.06296
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 2042.08,
+            "volume": 8,
+            "weight": 0.02275
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 1161.2,
+            "volume": 4,
+            "weight": 0.0135
+          },
+          {
+            "price": 209.86,
+            "symbol": "MA",
+            "total": 839.44,
+            "volume": 4,
+            "weight": 0.01011
+          }
+        ],
+        "name": "testtest"
+      },
+      {
+        "volatility": 0.1856737756414967,
+        "return": 0.43820937192566634,
+        "name": "testtest"
+      },
+      {
+        "volatility": 0,
+        "return": 0.05,
+        "name": "user"
+      },
+      {
+        "volatility": 0.1745144265201972,
+        "return": 0.40519330098362466,
+        "sharpe": 1.5196067526998,
+        "weights": [
+          {
+            "price": 79.22,
+            "symbol": "MRK",
+            "total": 47769.66,
+            "volume": 603,
+            "weight": 0.47773
+          },
+          {
+            "price": 1772.36,
+            "symbol": "AMZN",
+            "total": 24813.04,
+            "volume": 14,
+            "weight": 0.251
+          },
+          {
+            "price": 118.52,
+            "symbol": "LLY",
+            "total": 16355.76,
+            "volume": 138,
+            "weight": 0.16339
+          },
+          {
+            "price": 255.26,
+            "symbol": "ADBE",
+            "total": 4339.42,
+            "volume": 17,
+            "weight": 0.04149
+          },
+          {
+            "price": 69.11,
+            "symbol": "COP",
+            "total": 3524.61,
+            "volume": 51,
+            "weight": 0.03472
+          },
+          {
+            "price": 290.3,
+            "symbol": "NFLX",
+            "total": 3193.3,
+            "volume": 11,
+            "weight": 0.03168
+          }
+        ],
+        "name": "user"
+      },
+      {
+        "volatility": 0.1856737756414967,
+        "return": 0.4279061857018651,
+        "name": "user"
+      }
+    ]
+  }
+}

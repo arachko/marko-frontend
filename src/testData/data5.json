@@ -1,0 +1,608 @@
+{
+    "CML": {
+        "OptimalPortfolio": {
+            "OP": {
+                "Portfolio": {
+                    "name": "am_tech_stocks",
+                    "return": 0.088,
+                    "sharpe": 0.562,
+                    "volatility": 0.156,
+                    "weights": [
+                        {
+                            "mean_return": 0.018,
+                            "symbol": "CBA.AX",
+                            "weight": 0.238
+                        },
+                        {
+                            "mean_return": 0.0,
+                            "symbol": "BHP.AX",
+                            "weight": 0.0
+                        },
+                        {
+                            "mean_return": 0.07,
+                            "symbol": "TLS.AX",
+                            "weight": 0.762
+                        }
+                    ]
+                }
+            },
+            "opt_ret": 0.0875178757227,
+            "opt_vol": 0.155779615793,
+            "riskfree_ret": 0.05
+        }
+    },
+    "EfficientPortfolios": {
+        "Points": [
+            {
+                "return": 0.0669829549851,
+                "sharpe": 0.468135326422,
+                "volatility": 0.143084597988,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.386118
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.150071
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.463811
+                    }
+                ]
+            },
+            {
+                "return": 0.0678354344528,
+                "sharpe": 0.47406529545,
+                "volatility": 0.143093019261,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.3928
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.141955
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.465245
+                    }
+                ]
+            },
+            {
+                "return": 0.0686880212967,
+                "sharpe": 0.479933213242,
+                "volatility": 0.143119957947,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.400902
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.13363
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.465469
+                    }
+                ]
+            },
+            {
+                "return": 0.0695404727856,
+                "sharpe": 0.485760768206,
+                "volatility": 0.143157861518,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.40378
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.126073
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.470147
+                    }
+                ]
+            },
+            {
+                "return": 0.0703929705968,
+                "sharpe": 0.491526424989,
+                "volatility": 0.143212993276,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.406659
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.118517
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.474825
+                    }
+                ]
+            },
+            {
+                "return": 0.0712454220856,
+                "sharpe": 0.497229543795,
+                "volatility": 0.143284772546,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.409537
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.11096
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.479503
+                    }
+                ]
+            },
+            {
+                "return": 0.0720979477011,
+                "sharpe": 0.502867671096,
+                "volatility": 0.143373598752,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.412416
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.103403
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.484181
+                    }
+                ]
+            },
+            {
+                "return": 0.07295039919,
+                "sharpe": 0.508439011624,
+                "volatility": 0.143479153885,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.415294
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.095846
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.488859
+                    }
+                ]
+            },
+            {
+                "return": 0.0738028777878,
+                "sharpe": 0.513960018044,
+                "volatility": 0.143596535133,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.423125
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.087561
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.489313
+                    }
+                ]
+            },
+            {
+                "return": 0.0746554741523,
+                "sharpe": 0.519407290757,
+                "volatility": 0.143732048973,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.429736
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.079456
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.490809
+                    }
+                ]
+            },
+            {
+                "return": 0.0755079606264,
+                "sharpe": 0.524785528688,
+                "volatility": 0.143883465718,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.434582
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.07161
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.493809
+                    }
+                ]
+            },
+            {
+                "return": 0.0763603831995,
+                "sharpe": 0.530095030409,
+                "volatility": 0.144050366102,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.439428
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.063763
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.496808
+                    }
+                ]
+            },
+            {
+                "return": 0.0772129438002,
+                "sharpe": 0.535333385763,
+                "volatility": 0.14423338027,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.444275
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.055917
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.499808
+                    }
+                ]
+            },
+            {
+                "return": 0.0780654126956,
+                "sharpe": 0.540499850965,
+                "volatility": 0.1444318857,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.449122
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.048071
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.502807
+                    }
+                ]
+            },
+            {
+                "return": 0.0789178991697,
+                "sharpe": 0.545593487936,
+                "volatility": 0.144645969783,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.453968
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.040225
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.505807
+                    }
+                ]
+            },
+            {
+                "return": 0.0797703680651,
+                "sharpe": 0.550613029638,
+                "volatility": 0.144875554648,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.458815
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.032379
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.508806
+                    }
+                ]
+            },
+            {
+                "return": 0.0806229564702,
+                "sharpe": 0.55555829373,
+                "volatility": 0.145120606388,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.463662
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.024532
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.511806
+                    }
+                ]
+            },
+            {
+                "return": 0.0814754253655,
+                "sharpe": 0.560426998996,
+                "volatility": 0.145380978275,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.468509
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.016686
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.514805
+                    }
+                ]
+            },
+            {
+                "return": 0.0823278942609,
+                "sharpe": 0.56521903062,
+                "volatility": 0.14565662124,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.473356
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.00884
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.517804
+                    }
+                ]
+            },
+            {
+                "return": 0.0831804372828,
+                "sharpe": 0.569933607026,
+                "volatility": 0.145947591539,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.478204
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.000994
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.520803
+                    }
+                ]
+            },
+            {
+                "return": 0.084032893841,
+                "sharpe": 0.573547908156,
+                "volatility": 0.146514166726,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.436463
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.563537
+                    }
+                ]
+            },
+            {
+                "return": 0.084885394068,
+                "sharpe": 0.57445090241,
+                "volatility": 0.147767883577,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.387967
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.612033
+                    }
+                ]
+            },
+            {
+                "return": 0.085737894295,
+                "sharpe": 0.57274397182,
+                "volatility": 0.149696720548,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.339471
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.660529
+                    }
+                ]
+            },
+            {
+                "return": 0.086590394522,
+                "sharpe": 0.56864475668,
+                "volatility": 0.152275024969,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.290975
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.709025
+                    }
+                ]
+            },
+            {
+                "return": 0.087442894749,
+                "sharpe": 0.562440472181,
+                "volatility": 0.155470488121,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.242479
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.757521
+                    }
+                ]
+            },
+            {
+                "return": 0.088295394976,
+                "sharpe": 0.554459238673,
+                "volatility": 0.159245962223,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.193983
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.806017
+                    }
+                ]
+            },
+            {
+                "return": 0.0891478776242,
+                "sharpe": 0.545042965594,
+                "volatility": 0.163561192881,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.145488
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.854512
+                    }
+                ]
+            },
+            {
+                "return": 0.0900003778512,
+                "sharpe": 0.534523859477,
+                "volatility": 0.168374855969,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.096992
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.903008
+                    }
+                ]
+            },
+            {
+                "return": 0.0908528780782,
+                "sharpe": 0.523209156374,
+                "volatility": 0.173645428355,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.048496
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 0.951504
+                    }
+                ]
+            },
+            {
+                "return": 0.0917053783051,
+                "sharpe": 0.51137028899,
+                "volatility": 0.179332628977,
+                "weights": [
+                    {
+                        "symbol": "CBA.AX",
+                        "weight": 0.0
+                    },
+                    {
+                        "symbol": "BHP.AX",
+                        "weight": -0.0
+                    },
+                    {
+                        "symbol": "TLS.AX",
+                        "weight": 1.0
+                    }
+                ]
+            }
+        ]
+    }
+}

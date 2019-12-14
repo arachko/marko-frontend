@@ -1,608 +1,1300 @@
 {
-    "CML": {
-        "OptimalPorfolio": {
-            "OP": {
-                "Portfolio": {
-                    "name": "am_tech_stocks",
-                    "return": 0.088,
-                    "sharpe": 0.562,
-                    "volatility": 0.156,
-                    "weights": [
-                        {
-                            "mean_return": 0.018,
-                            "symbol": "CBA.AX",
-                            "weight": 0.238
-                        },
-                        {
-                            "mean_return": 0.0,
-                            "symbol": "BHP.AX",
-                            "weight": 0.0
-                        },
-                        {
-                            "mean_return": 0.07,
-                            "symbol": "TLS.AX",
-                            "weight": 0.762
-                        }
-                    ]
-                }
-            },
-            "opt_ret": 0.0875178757227,
-            "opt_vol": 0.155779615793,
-            "riskfree_ret": 0.05
-        }
-    },
-    "EfficientPortfolios": {
-        "Points": [
+  "CML": {
+    "OptimalPortfolio": {
+      "OP": {
+        "Portfolio": {
+          "return": 0.36319094741700525,
+          "sharpe": 1.9820151574965887,
+          "volatility": 0.15801642395741583,
+          "weights": [
             {
-                "return": 0.0669829549851,
-                "sharpe": 0.468135326422,
-                "volatility": 0.143084597988,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.386118
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.150071
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.463811
-                    }
-                ]
+              "price": 183.43,
+              "symbol": "CME",
+              "total": 33200.83,
+              "volume": 181,
+              "weight": 0.33196
             },
             {
-                "return": 0.0678354344528,
-                "sharpe": 0.47406529545,
-                "volatility": 0.143093019261,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.3928
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.141955
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.465245
-                    }
-                ]
+              "price": 67.36,
+              "symbol": "CSX",
+              "total": 17917.76,
+              "volume": 266,
+              "weight": 0.18056
             },
             {
-                "return": 0.0686880212967,
-                "sharpe": 0.479933213242,
-                "volatility": 0.143119957947,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.400902
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.13363
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.465469
-                    }
-                ]
+              "price": 1696.2,
+              "symbol": "AMZN",
+              "total": 15265.8,
+              "volume": 9,
+              "weight": 0.14822
             },
             {
-                "return": 0.0695404727856,
-                "sharpe": 0.485760768206,
-                "volatility": 0.143157861518,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.40378
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.126073
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.470147
-                    }
-                ]
+              "price": 50.7,
+              "symbol": "XEL",
+              "total": 14348.1,
+              "volume": 283,
+              "weight": 0.14378
             },
             {
-                "return": 0.0703929705968,
-                "sharpe": 0.491526424989,
-                "volatility": 0.143212993276,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.406659
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.118517
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.474825
-                    }
-                ]
+              "price": 156.93,
+              "symbol": "NVDA",
+              "total": 13339.05,
+              "volume": 85,
+              "weight": 0.13453
             },
             {
-                "return": 0.0712454220856,
-                "sharpe": 0.497229543795,
-                "volatility": 0.143284772546,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.409537
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.11096
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.479503
-                    }
-                ]
+              "price": 339.1,
+              "symbol": "NFLX",
+              "total": 4747.4,
+              "volume": 14,
+              "weight": 0.04884
             },
             {
-                "return": 0.0720979477011,
-                "sharpe": 0.502867671096,
-                "volatility": 0.143373598752,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.412416
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.103403
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.484181
-                    }
-                ]
-            },
-            {
-                "return": 0.07295039919,
-                "sharpe": 0.508439011624,
-                "volatility": 0.143479153885,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.415294
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.095846
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.488859
-                    }
-                ]
-            },
-            {
-                "return": 0.0738028777878,
-                "sharpe": 0.513960018044,
-                "volatility": 0.143596535133,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.423125
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.087561
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.489313
-                    }
-                ]
-            },
-            {
-                "return": 0.0746554741523,
-                "sharpe": 0.519407290757,
-                "volatility": 0.143732048973,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.429736
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.079456
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.490809
-                    }
-                ]
-            },
-            {
-                "return": 0.0755079606264,
-                "sharpe": 0.524785528688,
-                "volatility": 0.143883465718,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.434582
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.07161
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.493809
-                    }
-                ]
-            },
-            {
-                "return": 0.0763603831995,
-                "sharpe": 0.530095030409,
-                "volatility": 0.144050366102,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.439428
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.063763
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.496808
-                    }
-                ]
-            },
-            {
-                "return": 0.0772129438002,
-                "sharpe": 0.535333385763,
-                "volatility": 0.14423338027,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.444275
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.055917
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.499808
-                    }
-                ]
-            },
-            {
-                "return": 0.0780654126956,
-                "sharpe": 0.540499850965,
-                "volatility": 0.1444318857,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.449122
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.048071
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.502807
-                    }
-                ]
-            },
-            {
-                "return": 0.0789178991697,
-                "sharpe": 0.545593487936,
-                "volatility": 0.144645969783,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.453968
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.040225
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.505807
-                    }
-                ]
-            },
-            {
-                "return": 0.0797703680651,
-                "sharpe": 0.550613029638,
-                "volatility": 0.144875554648,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.458815
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.032379
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.508806
-                    }
-                ]
-            },
-            {
-                "return": 0.0806229564702,
-                "sharpe": 0.55555829373,
-                "volatility": 0.145120606388,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.463662
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.024532
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.511806
-                    }
-                ]
-            },
-            {
-                "return": 0.0814754253655,
-                "sharpe": 0.560426998996,
-                "volatility": 0.145380978275,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.468509
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.016686
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.514805
-                    }
-                ]
-            },
-            {
-                "return": 0.0823278942609,
-                "sharpe": 0.56521903062,
-                "volatility": 0.14565662124,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.473356
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.00884
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.517804
-                    }
-                ]
-            },
-            {
-                "return": 0.0831804372828,
-                "sharpe": 0.569933607026,
-                "volatility": 0.145947591539,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.478204
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.000994
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.520803
-                    }
-                ]
-            },
-            {
-                "return": 0.084032893841,
-                "sharpe": 0.573547908156,
-                "volatility": 0.146514166726,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.436463
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.563537
-                    }
-                ]
-            },
-            {
-                "return": 0.084885394068,
-                "sharpe": 0.57445090241,
-                "volatility": 0.147767883577,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.387967
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.612033
-                    }
-                ]
-            },
-            {
-                "return": 0.085737894295,
-                "sharpe": 0.57274397182,
-                "volatility": 0.149696720548,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.339471
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.660529
-                    }
-                ]
-            },
-            {
-                "return": 0.086590394522,
-                "sharpe": 0.56864475668,
-                "volatility": 0.152275024969,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.290975
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.709025
-                    }
-                ]
-            },
-            {
-                "return": 0.087442894749,
-                "sharpe": 0.562440472181,
-                "volatility": 0.155470488121,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.242479
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.757521
-                    }
-                ]
-            },
-            {
-                "return": 0.088295394976,
-                "sharpe": 0.554459238673,
-                "volatility": 0.159245962223,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.193983
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.806017
-                    }
-                ]
-            },
-            {
-                "return": 0.0891478776242,
-                "sharpe": 0.545042965594,
-                "volatility": 0.163561192881,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.145488
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.854512
-                    }
-                ]
-            },
-            {
-                "return": 0.0900003778512,
-                "sharpe": 0.534523859477,
-                "volatility": 0.168374855969,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.096992
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.903008
-                    }
-                ]
-            },
-            {
-                "return": 0.0908528780782,
-                "sharpe": 0.523209156374,
-                "volatility": 0.173645428355,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.048496
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 0.951504
-                    }
-                ]
-            },
-            {
-                "return": 0.0917053783051,
-                "sharpe": 0.51137028899,
-                "volatility": 0.179332628977,
-                "weights": [
-                    {
-                        "symbol": "CBA.AX",
-                        "weight": 0.0
-                    },
-                    {
-                        "symbol": "BHP.AX",
-                        "weight": -0.0
-                    },
-                    {
-                        "symbol": "TLS.AX",
-                        "weight": 1.0
-                    }
-                ]
+              "price": 35.76,
+              "symbol": "MU",
+              "total": 1180.08,
+              "volume": 33,
+              "weight": 0.01212
             }
-        ]
+          ],
+          "name": "testtest"
+        }
+      },
+      "opt_ret": 0.363,
+      "opt_vol": 0.158,
+      "riskfree_ret": 0.05
     }
+  },
+  "EfficientPortfolios": {
+    "Points": [
+      {
+        "return": 0.3302663177411818,
+        "sharpe": 2.2495354290834197,
+        "volatility": 0.1423699816417985,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 32833.97,
+            "volume": 179,
+            "weight": 0.32807
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 21699.6,
+            "volume": 428,
+            "weight": 0.2168
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 15762.24,
+            "volume": 234,
+            "weight": 0.15708
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 13569.6,
+            "volume": 8,
+            "weight": 0.13151
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 10671.24,
+            "volume": 68,
+            "weight": 0.10666
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 4069.2,
+            "volume": 12,
+            "weight": 0.03812
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1287.36,
+            "volume": 36,
+            "weight": 0.01256
+          },
+          {
+            "symbol": "ROST",
+            "weight": 0.00576
+          },
+          {
+            "symbol": "AABA",
+            "weight": 0.00344
+          }
+        ]
+      },
+      {
+        "return": 0.33802521369601407,
+        "sharpe": 2.1801284433331425,
+        "volatility": 0.14587453077296375,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33200.83,
+            "volume": 181,
+            "weight": 0.33066
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 20229.3,
+            "volume": 399,
+            "weight": 0.20221
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 16301.12,
+            "volume": 242,
+            "weight": 0.16309
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 13569.6,
+            "volume": 8,
+            "weight": 0.13638
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 11298.96,
+            "volume": 72,
+            "weight": 0.11326
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 4069.2,
+            "volume": 12,
+            "weight": 0.04072
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1323.12,
+            "volume": 37,
+            "weight": 0.01293
+          },
+          {
+            "symbol": "ROST",
+            "weight": 0.00073
+          }
+        ]
+      },
+      {
+        "return": 0.3455095334668771,
+        "sharpe": 2.112365776008678,
+        "volatility": 0.14936311554101836,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33200.83,
+            "volume": 181,
+            "weight": 0.33119
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 18556.2,
+            "volume": 366,
+            "weight": 0.18509
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 16840,
+            "volume": 250,
+            "weight": 0.16832
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 13569.6,
+            "volume": 8,
+            "weight": 0.13995
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 12083.61,
+            "volume": 77,
+            "weight": 0.11955
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 4408.3,
+            "volume": 13,
+            "weight": 0.04318
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1287.36,
+            "volume": 36,
+            "weight": 0.01271
+          }
+        ]
+      },
+      {
+        "return": 0.35376391961704695,
+        "sharpe": 2.0462726948573713,
+        "volatility": 0.15333436271988024,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33200.83,
+            "volume": 181,
+            "weight": 0.33146
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 17513.6,
+            "volume": 260,
+            "weight": 0.17401
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 16781.7,
+            "volume": 331,
+            "weight": 0.16585
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 13569.6,
+            "volume": 8,
+            "weight": 0.14389
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 12868.26,
+            "volume": 82,
+            "weight": 0.12653
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 4747.4,
+            "volume": 14,
+            "weight": 0.04582
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1251.6,
+            "volume": 35,
+            "weight": 0.01243
+          }
+        ]
+      },
+      {
+        "return": 0.36319094741700525,
+        "sharpe": 1.9820151574965887,
+        "volatility": 0.15801642395741583,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33200.83,
+            "volume": 181,
+            "weight": 0.33196
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 17917.76,
+            "volume": 266,
+            "weight": 0.18056
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.14822
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 14348.1,
+            "volume": 283,
+            "weight": 0.14378
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 13339.05,
+            "volume": 85,
+            "weight": 0.13453
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 4747.4,
+            "volume": 14,
+            "weight": 0.04884
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1180.08,
+            "volume": 33,
+            "weight": 0.01212
+          }
+        ]
+      },
+      {
+        "return": 0.37389174877935105,
+        "sharpe": 1.9197773319196845,
+        "volatility": 0.16350424789393386,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33200.83,
+            "volume": 181,
+            "weight": 0.33222
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 18793.44,
+            "volume": 279,
+            "weight": 0.18789
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.15317
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 14280.63,
+            "volume": 91,
+            "weight": 0.14361
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 11863.8,
+            "volume": 234,
+            "weight": 0.11894
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 5425.6,
+            "volume": 16,
+            "weight": 0.0524
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1144.32,
+            "volume": 32,
+            "weight": 0.01177
+          }
+        ]
+      },
+      {
+        "return": 0.3861130451281991,
+        "sharpe": 1.859762174340459,
+        "volatility": 0.16997498362407792,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33384.26,
+            "volume": 182,
+            "weight": 0.33282
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 19669.12,
+            "volume": 292,
+            "weight": 0.19637
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.15901
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 15536.07,
+            "volume": 99,
+            "weight": 0.15387
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 9075.3,
+            "volume": 179,
+            "weight": 0.09027
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 5764.7,
+            "volume": 17,
+            "weight": 0.05628
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1215.84,
+            "volume": 34,
+            "weight": 0.01139
+          }
+        ]
+      },
+      {
+        "return": 0.40024011234800744,
+        "sharpe": 1.8021915135768938,
+        "volatility": 0.17769482873238698,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33200.83,
+            "volume": 181,
+            "weight": 0.33349
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 20544.8,
+            "volume": 305,
+            "weight": 0.20607
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 16477.65,
+            "volume": 105,
+            "weight": 0.16577
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.16558
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 6103.8,
+            "volume": 18,
+            "weight": 0.06091
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 5627.7,
+            "volume": 111,
+            "weight": 0.05723
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1072.8,
+            "volume": 30,
+            "weight": 0.01095
+          }
+        ]
+      },
+      {
+        "return": 0.41687243441127164,
+        "sharpe": 1.747307106971418,
+        "volatility": 0.18707211405889312,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33567.69,
+            "volume": 183,
+            "weight": 0.33436
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 21757.28,
+            "volume": 323,
+            "weight": 0.21762
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 18046.95,
+            "volume": 115,
+            "weight": 0.17987
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.17343
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 6782,
+            "volume": 20,
+            "weight": 0.06608
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 1825.2,
+            "volume": 36,
+            "weight": 0.01825
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1037.04,
+            "volume": 29,
+            "weight": 0.01039
+          }
+        ]
+      },
+      {
+        "return": 0.4274714358930633,
+        "sharpe": 1.6949726489612957,
+        "volatility": 0.19320160481276358,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 32650.54,
+            "volume": 178,
+            "weight": 0.32615
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 22565.6,
+            "volume": 335,
+            "weight": 0.22539
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 19302.39,
+            "volume": 123,
+            "weight": 0.19102
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.17645
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 7121.1,
+            "volume": 21,
+            "weight": 0.07096
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1287.36,
+            "volume": 36,
+            "weight": 0.01003
+          }
+        ]
+      },
+      {
+        "return": 0.4325455166088825,
+        "sharpe": 1.6436080333255119,
+        "volatility": 0.19624235831719333,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 31183.1,
+            "volume": 170,
+            "weight": 0.31083
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 23037.12,
+            "volume": 342,
+            "weight": 0.22983
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 19930.11,
+            "volume": 127,
+            "weight": 0.19931
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.17444
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 7799.3,
+            "volume": 23,
+            "weight": 0.07535
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1037.04,
+            "volume": 29,
+            "weight": 0.01025
+          }
+        ]
+      },
+      {
+        "return": 0.43809344082444834,
+        "sharpe": 1.5930815266974099,
+        "volatility": 0.19967179048512504,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 29532.23,
+            "volume": 161,
+            "weight": 0.29401
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 23441.28,
+            "volume": 348,
+            "weight": 0.23466
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 20871.69,
+            "volume": 133,
+            "weight": 0.20838
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.17255
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 8138.4,
+            "volume": 24,
+            "weight": 0.0801
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1037.04,
+            "volume": 29,
+            "weight": 0.01031
+          }
+        ]
+      },
+      {
+        "return": 0.4442000848948762,
+        "sharpe": 1.5434754248231648,
+        "volatility": 0.2035666262265718,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 27697.93,
+            "volume": 151,
+            "weight": 0.2756
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 23980.16,
+            "volume": 356,
+            "weight": 0.24014
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 21813.27,
+            "volume": 139,
+            "weight": 0.21854
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.17027
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 8477.5,
+            "volume": 25,
+            "weight": 0.08505
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1037.04,
+            "volume": 29,
+            "weight": 0.0104
+          }
+        ]
+      },
+      {
+        "return": 0.45107043643986583,
+        "sharpe": 1.494881973236527,
+        "volatility": 0.20809029877213384,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 25496.77,
+            "volume": 139,
+            "weight": 0.25488
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 24586.4,
+            "volume": 365,
+            "weight": 0.24588
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 22754.85,
+            "volume": 145,
+            "weight": 0.22977
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.16788
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 9155.7,
+            "volume": 27,
+            "weight": 0.09108
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1037.04,
+            "volume": 29,
+            "weight": 0.01052
+          }
+        ]
+      },
+      {
+        "return": 0.4585858078412276,
+        "sharpe": 1.4474023033956067,
+        "volatility": 0.21319974903818037,
+        "weights": [
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 25260,
+            "volume": 375,
+            "weight": 0.25229
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 24167.22,
+            "volume": 154,
+            "weight": 0.24206
+          },
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 23112.18,
+            "volume": 126,
+            "weight": 0.23214
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.16528
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 9494.8,
+            "volume": 28,
+            "weight": 0.09742
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1001.28,
+            "volume": 28,
+            "weight": 0.01081
+          }
+        ]
+      },
+      {
+        "return": 0.46719646823737415,
+        "sharpe": 1.4011504064175295,
+        "volatility": 0.219245890255862,
+        "weights": [
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 25664.16,
+            "volume": 381,
+            "weight": 0.25977
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 25579.59,
+            "volume": 163,
+            "weight": 0.2562
+          },
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 20544.16,
+            "volume": 112,
+            "weight": 0.20612
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 16962,
+            "volume": 10,
+            "weight": 0.16223
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 10173,
+            "volume": 30,
+            "weight": 0.1048
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1072.8,
+            "volume": 30,
+            "weight": 0.01086
+          }
+        ]
+      },
+      {
+        "return": 0.4770283846359332,
+        "sharpe": 1.3562514997556125,
+        "volatility": 0.22638012543488994,
+        "weights": [
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 27305.82,
+            "volume": 174,
+            "weight": 0.27237
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 26944,
+            "volume": 400,
+            "weight": 0.26832
+          },
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 17792.71,
+            "volume": 97,
+            "weight": 0.1764
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.15879
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 11529.4,
+            "volume": 34,
+            "weight": 0.11318
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1144.32,
+            "volume": 32,
+            "weight": 0.01094
+          }
+        ]
+      },
+      {
+        "return": 0.48792892505268204,
+        "sharpe": 1.3128441249688498,
+        "volatility": 0.23455101728850583,
+        "weights": [
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 29032.05,
+            "volume": 185,
+            "weight": 0.29041
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 27887.04,
+            "volume": 414,
+            "weight": 0.27773
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.15477
+          },
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 14490.97,
+            "volume": 79,
+            "weight": 0.14364
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 12207.6,
+            "volume": 36,
+            "weight": 0.12258
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1108.56,
+            "volume": 31,
+            "weight": 0.01087
+          }
+        ]
+      },
+      {
+        "return": 0.5008021305364733,
+        "sharpe": 1.2710819685255528,
+        "volatility": 0.24451777165638008,
+        "weights": [
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 31072.14,
+            "volume": 198,
+            "weight": 0.31152
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 28830.08,
+            "volume": 428,
+            "weight": 0.28871
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.15043
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 13224.9,
+            "volume": 39,
+            "weight": 0.13345
+          },
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 10455.51,
+            "volume": 57,
+            "weight": 0.10471
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1144.32,
+            "volume": 32,
+            "weight": 0.01119
+          }
+        ]
+      },
+      {
+        "return": 0.5158023155277267,
+        "sharpe": 1.2311317747154065,
+        "volatility": 0.25651382087082336,
+        "weights": [
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 33426.09,
+            "volume": 213,
+            "weight": 0.3361
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 30109.92,
+            "volume": 447,
+            "weight": 0.30174
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 14581.3,
+            "volume": 43,
+            "weight": 0.14618
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.1451
+          },
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 5686.33,
+            "volume": 31,
+            "weight": 0.05933
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 929.76,
+            "volume": 26,
+            "weight": 0.01155
+          }
+        ]
+      },
+      {
+        "return": 0.5334002728532403,
+        "sharpe": 1.1931756453778979,
+        "volatility": 0.2710416308831163,
+        "weights": [
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 36564.69,
+            "volume": 233,
+            "weight": 0.36499
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 31726.56,
+            "volume": 471,
+            "weight": 0.31702
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 16276.8,
+            "volume": 48,
+            "weight": 0.16106
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 13569.6,
+            "volume": 8,
+            "weight": 0.13893
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1215.84,
+            "volume": 34,
+            "weight": 0.0119
+          },
+          {
+            "symbol": "CME",
+            "weight": 0.0061
+          }
+        ]
+      },
+      {
+        "volatility": 0,
+        "return": 0.05,
+        "name": "testtest"
+      },
+      {
+        "return": 0.36319094741700525,
+        "sharpe": 1.9820151574965887,
+        "volatility": 0.15801642395741583,
+        "weights": [
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 33200.83,
+            "volume": 181,
+            "weight": 0.33196
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 17917.76,
+            "volume": 266,
+            "weight": 0.18056
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.14822
+          },
+          {
+            "price": 50.7,
+            "symbol": "XEL",
+            "total": 14348.1,
+            "volume": 283,
+            "weight": 0.14378
+          },
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 13339.05,
+            "volume": 85,
+            "weight": 0.13453
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 4747.4,
+            "volume": 14,
+            "weight": 0.04884
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1180.08,
+            "volume": 33,
+            "weight": 0.01212
+          }
+        ],
+        "name": "testtest"
+      },
+      {
+        "volatility": 0.2710416308831163,
+        "return": 0.587208620722932,
+        "name": "testtest"
+      },
+      {
+        "volatility": 0,
+        "return": 0.05,
+        "name": "user"
+      },
+      {
+        "volatility": 0.24451777165638008,
+        "return": 0.5008021305364733,
+        "sharpe": 1.2710819685255528,
+        "weights": [
+          {
+            "price": 156.93,
+            "symbol": "NVDA",
+            "total": 31072.14,
+            "volume": 198,
+            "weight": 0.31152
+          },
+          {
+            "price": 67.36,
+            "symbol": "CSX",
+            "total": 28830.08,
+            "volume": 428,
+            "weight": 0.28871
+          },
+          {
+            "price": 1696.2,
+            "symbol": "AMZN",
+            "total": 15265.8,
+            "volume": 9,
+            "weight": 0.15043
+          },
+          {
+            "price": 339.1,
+            "symbol": "NFLX",
+            "total": 13224.9,
+            "volume": 39,
+            "weight": 0.13345
+          },
+          {
+            "price": 183.43,
+            "symbol": "CME",
+            "total": 10455.51,
+            "volume": 57,
+            "weight": 0.10471
+          },
+          {
+            "price": 35.76,
+            "symbol": "MU",
+            "total": 1144.32,
+            "volume": 32,
+            "weight": 0.01119
+          }
+        ],
+        "name": "user"
+      },
+      {
+        "volatility": 0.2710416308831163,
+        "return": 0.5497025117581102,
+        "name": "user"
+      }
+    ]
+  }
 }

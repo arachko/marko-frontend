@@ -22,32 +22,6 @@ export default class App extends Component {
     minutes: 0
   };
 
-  pollServerForResult(uuid) {
-
-    setTimeout(() => {
-
-      pollServer(uuid).then((json) => {
-        if (doesJsonHaveExpectedContent(json)) {
-          logErrorJson(json);
-          this.setState({
-            data: json,
-            loading: false,
-            riskFree: json.CML.OptimalPorfolio.riskfree_ret
-          })
-        }
-        else if (json.response && json.response.taskexists === false) {
-          this.setState({
-            error: true,
-            loading: false
-          })
-        }
-        else {
-          this.pollServerForResult(uuid)
-        }
-      })
-    }, 10000)
-  }
-
   changePage = (page) => () => {
     this.setState({
       page: page
@@ -62,12 +36,17 @@ export default class App extends Component {
     this.setState({jsonFile: content});
   };
 
+  setData = (data) => {
+    this.setState({data: data});
+  }
+
   render() {
     if (this.state.page === 'start') {
       return <StartPage changePage={this.changePage}/>
     } else if (this.state.page === 'calculation') {
       return <CalculationPage
           state={this.state}
+          setData={this.setData}
           changePage={this.changePage}
           selectPoint={this.selectPoint}
           setJson={this.setJson}
